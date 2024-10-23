@@ -1,3 +1,8 @@
+-- Create the database if it does not exist
+CREATE DATABASE tour_agency;
+
+-- Switch to the tour_agency database
+\c tour_agency
 CREATE TABLE IF NOT EXISTS tour_agency.agents (
 agent_id bigserial,
 agent_code varchar(10) UNIQUE,
